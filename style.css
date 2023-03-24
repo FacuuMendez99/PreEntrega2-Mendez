@@ -47,7 +47,9 @@ svg , span{
 a {
     text-decoration: none;
 }
-
+.card {
+    border-radius: 0;
+}
 /* <-------------------------------------------------------------------------------------------------------------------------------------------------------------------> */
 .newsletter {
     display: flex;
@@ -95,11 +97,12 @@ a {
 
 @media (min-width: 992px) {
     .fs-responsive {
-
         font-size: 22px;
     }
     .title-responsive {
         font-size: 40px;
     }
-
+    .email-submit {
+        width: 50%;
+    }
 }
