@@ -1,5 +1,7 @@
 * {
     font-family: 'Poppins', sans-serif;
+    list-style: none;
+    
 }
 .bg-blue {
     background-color: #303944;
@@ -24,6 +26,9 @@
 .fs-responsive{
     font-size: 12px;
 }
+.fs-responsive2{
+    font-size: 15px;
+}
 .title-responsive {
     font-size: 20px;
 }
@@ -31,6 +36,9 @@
 svg , span{
     color:#EDD9AB;
     margin: 8px;
+}
+h1,h2,h3,h4,h5,h6,p{
+    color: #303944;
 }
 
 .nav-link:focus,
@@ -50,6 +58,9 @@ a {
 .card {
     border-radius: 0;
 }
+
+
+
 /* <-------------------------------------------------------------------------------------------------------------------------------------------------------------------> */
 .newsletter {
     display: flex;
@@ -78,14 +89,86 @@ a {
             border: none;
             border-radius: 0 5px 5px 0;
         }
+/* <!---------------------------------------------------------------------------------------------------------------------------------------------------------------productos---> */
 
 
+.categorias {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+    .categorias button {
+        border: #A2A3B1 solid 2px;
+    }
 
+.opciones {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+    .opciones select {
+        border:#A2A3B1 solid 2px;
+        background-color: #303944;
+        color: #EDD9AB;
+        border-radius: 5px;
+        margin: 2px;
+        padding: 4px;
+    }
+
+
+.productos {
+    grid-row: 3/4;
+    grid-column: 1/5;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 12px;
+}
+
+.card-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: #A2A3B1 1px solid;
+}
+    .card-info p::before{
+        content: "$";
+    }
+
+.agregar {
+    display: inline-block;
+    margin: auto;
+    padding: 12px;
+}
+    .agregar button {
+        border: #303944 solid 2px;
+        border-radius: 22px;
+        background-color: #303944;
+        color:#EDD9AB;
+        padding-left: 14px;
+        font-size: 9PX;
+    }
+    .agregar button:hover {
+        transform: scale(110%);
+        transition: all 0.3s ease;
+    }
+
+.navegacion a{
+    color: #303944;
+}
+.navegacion a:hover,.navegacion span:hover {
+    background-color: #303944;
+    color: #EDD9AB;
+}
 
 
 @media (min-width: 768px) {
     .fs-responsive {
         font-size: 18px;
+    }
+    .fs-responsive2 {
+        font-size: 22px;
     }
     .title-responsive {
         font-size: 32px;
@@ -93,16 +176,29 @@ a {
     .email-submit {
         width: 70%;
     }
+    /*Productos --------------------------------------------------------------- */
+    .productos {
+        grid-template-columns: repeat(3,1fr);
+    }
+    .agregar button {
+        font-size:14px;
+    }
 }
 
 @media (min-width: 992px) {
     .fs-responsive {
         font-size: 22px;
     }
+    .fs-responsive2 {
+        font-size: 25px;
+    }
     .title-responsive {
         font-size: 40px;
     }
     .email-submit {
         width: 50%;
+    }
+    .productos {
+        grid-template-columns: repeat(4,1fr);
     }
 }
