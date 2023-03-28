@@ -3,6 +3,8 @@
     list-style: none;
     
 }
+
+/* <!---------------------------------------------------------------------------------------------------------------------------------------------------------------Utilidades---> */
 .bg-blue {
     background-color: #303944;
 }
@@ -50,6 +52,7 @@ h1,h2,h3,h4,h5,h6,p{
     display: flex;
     width: 50%;
     border: #262626 solid 1px;
+    margin: auto;
 }
 
 a {
@@ -61,7 +64,7 @@ a {
 
 
 
-/* <-------------------------------------------------------------------------------------------------------------------------------------------------------------------> */
+/* <--------------------------------------------------------------------------------------------------------------------------------------------------------------newsletter-----> */
 .newsletter {
     display: flex;
     flex-direction: column;
@@ -162,6 +165,57 @@ a {
     color: #EDD9AB;
 }
 
+/* <!---------------------------------------------------------------------------------------------------------------------------------------------------------------Contacto---> */
+
+.formulario form {
+    background-color:#303944;
+    border-radius: 12px;
+    font-size: small;
+    font-weight: 300;
+    margin: 16px;
+}
+    .formulario form div {
+        background-color: #303944;
+        padding-top: 50px;
+        width: 100%;
+    }
+        .formulario form div input {
+            background-color: #303944;
+            border: none;
+            border-bottom: #EDD9AB solid 1px;
+            width: 100%;
+            color: #EDD9AB;
+        }
+        .formulario form div input::placeholder {
+            color: #EDD9AB;
+            font-size: small;
+            font-weight: 300;
+        }
+        .formulario form div label {
+            color: #EDD9AB;
+            background-color: #303944;
+            display: block;
+            margin-bottom: 3px;
+        }
+        .formulario form div textarea {
+            background-color: #303944;
+            resize: none;
+            border: #EDD9AB solid 1px;
+            border-radius: 5px;
+            width: 100%;
+            color: #EDD9AB;
+        }
+            .formulario form div:last-child input{
+                display: block;
+                margin: auto;
+                color: #303944;
+                background-color: #EDD9AB;
+                padding: 12px 80px;
+                font-weight: 600;
+                border-radius: 12px;
+            }
+
+/* <!---------------------------------------------------------------------------------------------------------------------------------------------------------------Breakpoints(MD--LG)---> */
 
 @media (min-width: 768px) {
     .fs-responsive {
@@ -183,6 +237,13 @@ a {
     .agregar button {
         font-size:14px;
     }
+    /*Contacto --------------------------------------------------------------- */
+    .formulario form{
+        margin: 48px;
+    }
+    .formulario form div:last-child input {
+        width: 50%;
+    }
 }
 
 @media (min-width: 992px) {
@@ -198,7 +259,14 @@ a {
     .email-submit {
         width: 50%;
     }
+    /*Productos --------------------------------------------------------------- */
     .productos {
         grid-template-columns: repeat(4,1fr);
+    }
+
+    /*Contacto --------------------------------------------------------------- */
+    .formulario form{
+        width: 50%;
+        margin:auto;
     }
 }

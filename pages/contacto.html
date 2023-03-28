@@ -14,7 +14,8 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-md bg-dark">
+        <!--------------------------------------------------------------------------------------------------------------------------------------------------------------Navbar------>
+        <nav class="navbar navbar-expand-md bg-blue">
             <div class="container-fluid">
                 <div class="order-md-3">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
@@ -35,27 +36,29 @@
                 <div class="collapse navbar-collapse order-md-2" id="menu">
                     <ul class="navbar-nav me-auto">
                         <li class="nav-item">
-                            <a class="nav-link txt-yellow" href="productos.html">Productos</a>
+                            <a class="nav-link txt-yellow text-center" href="../pages/productos.html">Productos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link txt-yellow" href="nosotros.html">Sobre Nosotros</a>
+                            <a class="nav-link txt-yellow text-center" href="../pages/nosotros.html">Sobre Nosotros</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link txt-yellow" href="contacto.html">Contacto</a>
+                            <a class="nav-link txt-yellow text-center" href="../pages/contacto.html">Contacto</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>   
     </header>
-    <main>
-        <h1 class="espacio20 text_center">Contactanos</h1>
-        <p class="espacio20 text_center">
+
+    <!--------------------------------------------------------------------------------------------------------------------------------------------------------------main----->
+    <main class="d-flex flex-column align-items-center">
+        <h1 class="p-4">Contactanos</h1>
+        <p class="px-4 px-md-5">
             ¡Gracias por visitar nuestra tienda en línea! Si tienes alguna duda o buscas asesoramiento para tu próximo proyecto, no dudes en consultarnos, completá el siguiente formulario de contacto y nos pondremos en contacto vos lo antes posible. ¡Gracias por elegirnos!
         </p>
-        <div class="sub"></div>
-        <div class="formulario">
-            <form class="formulario" action="">
+        <div class="divisor"></div>
+        <div class="formulario w-100">
+            <form class="p-4 px-md-5 my-lg-4" action="">
                 <div>
                     <input type="text" id="name" placeholder="Nombre">
                 </div>
@@ -69,13 +72,13 @@
                     <label for="mensaje">Mensaje</label>
                     <textarea name="" id="mensaje" cols="30" rows="10" ></textarea>
                 </div>
-                <div class="submit">
+                <div>
                     <input type="submit" value="Enviar">
                 </div>
             </form>
         </div>
     </main>
-    <!---------------------------------------------------------------------------------------->    
+    <!--------------------------------------------------------------------------------------------------------------------------------------------------------------Footer------>  
     <footer class="footer bg-blue d-flex align-items-center justify-content-center p-3">
         <img class="logo" src="../Imagenes/logoblanco.png" alt="logo">
         <div class="d-inline-block ms-auto">
