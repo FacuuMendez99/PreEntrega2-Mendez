@@ -1,0 +1,40 @@
+* {
+    font-family: $mainFont;
+    color: $darkColor;
+    text-decoration: none;
+    list-style: none;
+    a {
+        text-decoration: none;
+    }
+}
+.fs-responsive {
+    font-size: $smFont;
+}
+.divisor {
+    display: flex;
+    width: 50%;
+    border: $darkColor solid 1px;
+    margin: auto;
+}
+
+.titulo {
+    text-align: center;
+    margin: 24px;
+}
+
+h2 {
+    @extend .titulo;
+    padding: 12px;
+}
+
+@media (min-width: 768px) {
+    .fs-responsive {
+        font-size: $mdFont;
+    }
+}
+
+@media (min-width: 992px) {
+    .fs-responsive {
+        font-size: $lgFont;
+    }
+}

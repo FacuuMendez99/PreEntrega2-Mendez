@@ -1,0 +1,23 @@
+// Colores
+$mainColor:#303944;
+$secondaryColor:#edd9ab;
+$bgColor:#f7f8fa;
+$borderColor:#a2a3b1;
+$darkColor:#262626;
+
+// Fuentes
+$mainFont:'Poppins', sans-serif;
+$xsFont:8px;
+$smFont:12px;
+$mdFont:18px;
+$lgFont:24px;
+$boldFont:500;
+$lightFont:300;
+
+// Mixins
+@mixin containerFlex ($flexDirection, $justify, $align) {
+    display: flex;
+    flex-direction: $flexDirection;
+    justify-content: $justify;
+    align-items: $align;
+}

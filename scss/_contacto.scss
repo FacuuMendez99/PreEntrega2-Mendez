@@ -1,0 +1,81 @@
+.formulario 
+    form {
+        background-color:$mainColor;
+        border-radius: 12px;
+        font-size: small;
+        font-weight: 300;
+        margin: 16px;
+        
+        div {
+            background-color: $mainColor;
+            padding-top: 50px;
+            width: 100%;
+            
+            input {
+                background-color: $mainColor;
+                border: none;
+                border-bottom: $secondaryColor solid 1px;
+                width: 100%;
+                color: $secondaryColor;
+                
+                &::placeholder {
+                    color: $secondaryColor;
+                    font-size: small;
+                    font-weight: 300;
+                }
+            }
+
+            label {
+                color: $secondaryColor;
+                background-color: $mainColor;
+                display: block;
+                margin-bottom: 3px;
+            }
+
+            textarea {
+                background-color: $mainColor;
+                resize: none;
+                border: $secondaryColor solid 1px;
+                border-radius: 5px;
+                width: 100%;
+                color: $secondaryColor;
+            }
+
+            &:last-child {
+                input{
+                    display: block;
+                    margin: auto;
+                    color: $mainColor;
+                    background-color: $secondaryColor;
+                    padding: 12px 80px;
+                    font-weight: 600;
+                    border-radius: 12px;
+                }
+            }
+        }
+    }
+
+//------------------------------------------ Media
+@media (min-width: 768px) {
+    .formulario {
+        form{
+            margin: 48px;
+        }
+        div{
+            &:last-child {
+                input {
+                    width: 50%;
+                }
+            }
+        } 
+    }
+}
+
+@media (min-width: 992px) { 
+    .formulario {
+        form{
+            width: 50%;
+            margin:auto;
+        }
+    } 
+}
