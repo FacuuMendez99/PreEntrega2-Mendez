@@ -1,0 +1,43 @@
+.newsletter {
+    @include containerFlex(column,center,center)
+}
+
+.email-submit {
+    display: flex;
+    border: 2px solid $borderColor;
+    border-radius: 5px;
+    width:100%;
+    
+    .mail {
+        border: none;
+        padding: 12px;
+        width: 70%;
+    }
+    .subm {
+        background-color: $mainColor;
+        color: $secondaryColor;
+        width: 30%;
+        border: none;
+        border-radius: 0 5px 5px 0;
+    }
+}
+.card {
+    border-radius: 0px;
+}
+
+
+//------------------------------------------ Media
+@media (min-width: 768px) {
+    .email-submit{
+        width: 70%;
+    }
+}
+
+@media (min-width: 992px) {
+    .newsletter {
+        padding-left: 50%;
+    }
+    .email-submit {
+        width: 90%;
+    }
+}
