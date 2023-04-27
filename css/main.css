@@ -21,12 +21,13 @@
 }
 
 .titulo, h2 {
+  font-weight: 400;
   text-align: center;
-  margin: 24px;
+  padding: 24px;
 }
 
 h2 {
-  padding: 12px;
+  font-weight: 300;
 }
 
 @media (min-width: 768px) {
@@ -204,7 +205,6 @@ footer svg {
 .nosotros p {
   border-top: #a2a3b1 solid 5px;
   border-bottom: #a2a3b1 solid 5px;
-  margin: 0;
 }
 
 .datos {

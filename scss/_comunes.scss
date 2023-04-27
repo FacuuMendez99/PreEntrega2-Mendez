@@ -18,13 +18,14 @@
 }
 
 .titulo {
+    font-weight: 400;
     text-align: center;
-    margin: 24px;
+    padding: 24px;
 }
 
 h2 {
     @extend .titulo;
-    padding: 12px;
+    font-weight: 300;
 }
 
 @media (min-width: 768px) {
